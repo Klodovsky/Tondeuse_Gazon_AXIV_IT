@@ -33,7 +33,7 @@ public class Traitement_Instruction {
             case EAST:
                 x = positionTondeuse.getCoordonneesTondeuse().getX() + 1;
                 y = positionTondeuse.getCoordonneesTondeuse().getY();
-                break;
+                break; 
             case SOUTH:
                 x = positionTondeuse.getCoordonneesTondeuse().getX();
                 y = positionTondeuse.getCoordonneesTondeuse().getY() - 1;
