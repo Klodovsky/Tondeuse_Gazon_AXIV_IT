@@ -26,6 +26,7 @@ public class Formater_ligne {
 
     }
         //récuperer la position de la tondeuse qui est définit par ses coordonnées et son orientation
+    
     public static Position_Tondeuse formaterLigneTondeuse(String ligneTondeuse) {
         String[] elts = ligneTondeuse.split(CHAINE_ESPACE);
         Coordonnees pCoordonneesTondeuse = new Coordonnees(Integer.valueOf(elts[0]), Integer.valueOf(elts[1]));
@@ -33,6 +34,7 @@ public class Formater_ligne {
         return new Position_Tondeuse(pCoordonneesTondeuse, orientationTondeuse);
     }
         //récuperer l'objet Pelouse contenant les coordonnées limites de la pelouse
+    
     public static Pelouse formaterLignePelouse(String lignePelouse) {
         String[] elts = lignePelouse.split(CHAINE_ESPACE);
         return new Pelouse(new Coordonnees(Integer.valueOf(elts[0]), Integer.valueOf(elts[1])));
@@ -46,6 +48,7 @@ public class Formater_ligne {
         return listInstruction;
     }
        //récuperer un enum Orientation correspondant au caractère de l'orientation
+    
     public static Orientation getOrientation(char cOrientation) {
         for (Orientation orientation : Orientation.values()) {
             if (orientation.getCodeOrientation() == cOrientation) {
@@ -55,6 +58,7 @@ public class Formater_ligne {
         return null;
     }
         //récuperer une liste d'enum InstructionTondeuse correspondante à la ligne d'instruction
+    
     public static InstructionTondeuse getInstruction(char cInstruction) {
         for (InstructionTondeuse instruction : InstructionTondeuse.values()) {
             if (instruction.getCodeInstruction() == cInstruction) {
