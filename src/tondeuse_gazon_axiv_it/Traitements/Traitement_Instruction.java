@@ -21,7 +21,7 @@ public class Traitement_Instruction {
     private Traitement_Instruction() {
 
     }
-
+        // faire avancer la tondeuse et retourner les nouvelles coordonnees
     public static Coordonnees avancerTondeuse(Position_Tondeuse positionTondeuse, Coordonnees coordonnesMax) throws Tondeuse_Exception {
         Coordonnees coordonneesSuivantes = null;
         int x, y;
