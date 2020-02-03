@@ -63,7 +63,7 @@ La position et l'orientation sont fournies sous la forme de 2 chiffres et une le
 
 # Compiler le programme 
 
-Tondeuse_Gazon_AXIV_IT est un projet dévelopé avec Java sous Netbeans. Ainsi, il est possible de compiler le projet sur votre machine en utilisant la commande :
+Tondeuse_Gazon_AXIV_IT est un projet dévelopé avec Java sous Netbeans. Ainsi, il est possible de télécharger le projet sur votre machine en utilisant la commande :
 
 ```bash
 git clone https://github.com/Klodovskyy/Tondeuse_Gazon_AXIV_IT.git
