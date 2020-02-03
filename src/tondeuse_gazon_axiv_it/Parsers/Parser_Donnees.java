@@ -17,7 +17,10 @@ public class Parser_Donnees {
     	private Parser_Donnees(){
 
 	}
-
+	 
+	/* parser la position de la tondeuse et son orientation
+	 * La position et l'orientation sont fournies sous la forme de 2 chiffres et une lettre séparés par un espace */
+	 	 
 
 	public static boolean parseTondeuse(String tondeuse){
 		StringBuilder stringBuilder = new StringBuilder("");
@@ -27,7 +30,8 @@ public class Parser_Donnees {
 			.append("|").append(Orientation.WEST.getCodeOrientation());
 		return tondeuse.matches("(\\d+) (\\d+) (" + stringBuilder.toString()+")");
 	}
-	
+		 // parser la ligne des instructions
+	 // les instructions sont une suite de caractères(G, D, A) sans espaces
 
 	public static boolean parseListInstruction(String instructions){
 		StringBuilder stringBuilder = new StringBuilder("");
@@ -39,7 +43,8 @@ public class Parser_Donnees {
 		return instructions.matches(stringBuilder.toString());
 	}
 
-
+        //  parser la position de la pelouse
+	 // la position de la pelouse est sous forme de 2 chiffres séparés par espace
 	public static boolean parsePelouse(String pelouse){
 		return pelouse.matches("(\\d+) (\\d+)");
 	}
