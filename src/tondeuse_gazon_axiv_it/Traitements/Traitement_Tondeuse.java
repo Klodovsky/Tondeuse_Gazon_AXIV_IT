@@ -38,7 +38,7 @@ public class Traitement_Tondeuse {
 			listeInstruction = new ArrayList<InstructionTondeuse>();
 		}
 	}
-
+		//executer l'ensemble des insctructions par une tondeuse
 	public void executerInstructions() throws Tondeuse_Exception{
 		for(InstructionTondeuse instruction : listeInstruction){
 			Traitement_Instruction.executerInstruction(positionTondeuse,
