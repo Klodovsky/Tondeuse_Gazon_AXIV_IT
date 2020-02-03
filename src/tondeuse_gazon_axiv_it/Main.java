@@ -35,7 +35,8 @@ public class Main {
             throw new IllegalArgumentException();
         }
     }
-
+		// lecture/validation du fichier et lancement des tondeuses
+	
     private List<String> lancerTraitementsTondeuses(File fichier)
             throws Tondeuse_Exception, IOException {
         if (!fichier.isFile()) {
@@ -68,6 +69,7 @@ public class Main {
     }
 
 	 // returner la position des tondeuses
+	
     private List<String> traiterLignesSuivantes(Parser_Tondeuse parser,
             Scanner scanner) throws Tondeuse_Exception {
         List<String> listePositions = new ArrayList<String>();
