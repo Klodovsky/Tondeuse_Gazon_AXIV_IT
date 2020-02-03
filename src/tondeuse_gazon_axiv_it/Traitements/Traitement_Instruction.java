@@ -100,6 +100,7 @@ public class Traitement_Instruction {
     }
 
     // executer une seule instruction ( A, D ou G)
+    
     public static void executerInstruction(Position_Tondeuse positionTondeuse, InstructionTondeuse instruction, Coordonnees coordonnesMax) throws Tondeuse_Exception {
 
         switch (instruction) {
