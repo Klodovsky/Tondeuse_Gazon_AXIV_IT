@@ -22,6 +22,8 @@ Afin de répondre aux besoins de la société Axiv IT, on peut diviser notre pro
 
 ● L'exécution du programme (Traitements)
 
+● L'implémentation des tests
+
 
 ##  La pelouse 
 
